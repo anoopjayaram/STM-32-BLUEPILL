@@ -49,7 +49,7 @@ int main(void)
 
 }
 
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim) //500ms
 {
     HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_9);
 }
