@@ -21,6 +21,15 @@
 TIM_HandleTypeDef htim2;
 
 /* Private function prototypes -----------------------------------------------*/
+
+/*
+Freq =72MHz
+Precaler value = 1000
+output time = 500ms
+
+Preload value =  (0.5*72*1000000)/1000 = 36000
+
+*/
 TIM_HandleTypeDef htim2;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
